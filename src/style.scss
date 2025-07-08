@@ -1,0 +1,81 @@
+/* style.css
+  Author:         Jack Ramsey
+  Date:           2024-10-02
+  Last revised:   2024-10-02
+  Description:    CSS for Lab 18-Typescript 
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+
+  &>h1 {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 15px;
+    margin: 0;
+    font-weight: 200;
+    background: #333;
+    color: white;
+    padding-left: 100px;
+    border-bottom: 1px solid black;
+  }
+}
+
+.container {
+  background: #fff;
+  width: 20rem;
+  min-height: 25rem;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #0000002a;
+  border-radius: 10px;
+
+  h1 {
+    font-weight: 200;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+  }
+}
+
+// form & its elements
+form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-top: 10px;
+  }
+
+  input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      transition: .2s;
+      background-color: #0056b3;
+    }
+  }
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}

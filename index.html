@@ -1,0 +1,45 @@
+<!-- index.html
+  Author:         Jack
+  Date:           2024-09-27
+  Last revised:   2024-10-02
+  Description:    Form validation with Typescript (
+                  Intro to TS)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jack Ramsey">
+  <meta name="date" content="2024-09-27">
+  <meta name="last revised" content="2024-10-02">
+  <meta name="keywords" content="etsu, csci, csci 1720, labs, typescript">
+  <meta name="description" content="Introduction to Typescript">
+  <title>TypeScript Form Validation</title>
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+  <h1>Introduction to Typescript</h1>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form id="signupForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      <span id="usernameError" class="error"></span>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <span id="emailError" class="error"></span>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <span id="passwordError" class="error"></span>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <script src="dist/index.js"></script>
+  <script src="/js/w3c.js"></script>
+</body>
+</html>
